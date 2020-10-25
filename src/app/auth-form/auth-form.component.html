@@ -1,26 +1,24 @@
-<main class="app-wrapper">
-  <div class="auth-form-wrapper">
-    <h3 class="auth-form-wrapper__title">Enter login and password</h3>
-    <form class="auth-form" [formGroup]="authForm">
-      <label class="auth-form__label">
-        <span class="auth-form__input-name">Login</span>
+<div class="auth-form-wrapper">
+  <h3 class="auth-form-wrapper__title">Enter login and password</h3>
+  <form class="auth-form" [formGroup]="authForm">
+    <label class="auth-form__label">
+      <span class="auth-form__input-name">Login</span>
       <input
-             type="text"
-             class="auth-form__input"
-             [class.invalid]="loginInvalid"
-             [formControlName]="'login'"
+        type="text"
+        class="auth-form__input"
+        [class.invalid]="loginInvalid"
+        [formControlName]="'login'"
       >
-      </label>
-      <label class="auth-form__label">
-        <span class="auth-form__input-name">Password</span>
+    </label>
+    <label class="auth-form__label">
+      <span class="auth-form__input-name">Password</span>
       <input
-             type="password"
-             class="auth-form__input"
-             [class.invalid]="passwordInvalid"
-             [formControlName]="'password'"
+        type="password"
+        class="auth-form__input"
+        [class.invalid]="passwordInvalid"
+        [formControlName]="'password'"
       >
-      </label>
-    </form>
-    <button class="app-default-button auth-form-wrapper__button" (click)="enterAuthData()">Enter</button>
-  </div>
-</main>
+    </label>
+  </form>
+  <button class="app-default-button auth-form-wrapper__button" (click)="enterAuthData()">Enter</button>
+</div>

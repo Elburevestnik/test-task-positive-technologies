@@ -1,13 +1,3 @@
-.app-wrapper {
-  height: 100%;
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: whitesmoke;
-}
 .auth-form-wrapper {
   height: 250px;
   width: 300px;
@@ -17,10 +7,12 @@
 
   padding: 25px;
 
-  background: rgba(100, 149, 237, 0.5);
+  background: rgb(33, 33, 33);
   border: none;
   border-radius: 15px;
   box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.3);
+
+  color: #d6d6d6;
 
   &__title {
     text-align: center;
@@ -33,16 +25,14 @@
 
     margin: 0 auto;
 
-    background: white;
-    border: 1px solid rgb(100, 149, 237);
-
-    font-weight: bold;
+    background: #d6d6d6;
+    border: 2px solid rgb(110, 110, 110);
 
     &:hover {
-      background: #e696aa;
+      background: #7f0000;
       border: none;
 
-      color: white;
+      color: #d6d6d6;
     }
   }
 }
@@ -73,7 +63,7 @@
     margin-bottom: 10px;
 
     background: white;
-    border: 2px solid rgb(100, 149, 237);
+    border: 2px solid rgb(110, 110, 110);
     border-radius: 5px;
 
     &:focus {
@@ -82,8 +72,3 @@
   }
 }
 
-.invalid {
-  border: 2px solid #e66b7b;
-
-  transition: 200ms linear;
-}

@@ -2,10 +2,28 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.app-wrapper {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #3c3c3c;
+}
+
+.auth-info-snackbar .mat-simple-snackbar-action {
+  color: #b70000;
+}
+
+
 .app-default-button {
   border: none;
   border-radius: 15px;
 
+  font-weight: bold;
 
   transition: 200ms linear;
 
@@ -13,5 +31,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 .app-default-button:focus {
   outline: none;
+}
+
+.invalid {
+  border: 2px solid #b70000;
+
+  transition: 200ms linear;
 }
 
