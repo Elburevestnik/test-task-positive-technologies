@@ -1,0 +1,37 @@
+.app-wrapper {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.app-default-button {
+  height: 50px;
+  width: 200px;
+
+  background: rgba(100, 149, 237, 0.81);
+
+  color: white;
+  font-weight: bold;
+
+  &:hover {
+    background: rgba(100, 149, 237, 1);
+  }
+}
+::ng-deep {
+  .auth-dialog-window {
+    overflow: hidden;
+
+    border-radius: 15px;
+  }
+  .auth-info-snackbar {
+    background: white;
+
+    color: #6e6e6e;
+  }
+}
+.hidden {
+  display: none;
+}

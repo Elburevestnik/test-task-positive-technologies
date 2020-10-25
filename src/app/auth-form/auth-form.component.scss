@@ -1,0 +1,89 @@
+.app-wrapper {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: whitesmoke;
+}
+.auth-form-wrapper {
+  height: 250px;
+  width: 300px;
+
+  display: grid;
+  grid-template: 40px 1fr 40px / 1fr;
+
+  padding: 25px;
+
+  background: rgba(100, 149, 237, 0.5);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.3);
+
+  &__title {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &__button {
+    height: 40px;
+    width: 100px;
+
+    margin: 0 auto;
+
+    background: white;
+    border: 1px solid rgb(100, 149, 237);
+
+    font-weight: bold;
+
+    &:hover {
+      background: #e696aa;
+      border: none;
+
+      color: white;
+    }
+  }
+}
+.auth-form{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+
+  &__label {
+    display: grid;
+    grid-template: 1fr / 80px 1fr;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+  }
+
+  &__input-name {
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+  }
+  &__input {
+    height: 25px;
+
+    margin-bottom: 10px;
+
+    background: white;
+    border: 2px solid rgb(100, 149, 237);
+    border-radius: 5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.invalid {
+  border: 2px solid #e66b7b;
+
+  transition: 200ms linear;
+}
