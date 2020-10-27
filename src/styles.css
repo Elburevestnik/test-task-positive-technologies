@@ -33,9 +33,3 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   outline: none;
 }
 
-.invalid {
-  border: 2px solid #b70000;
-
-  transition: 200ms linear;
-}
-

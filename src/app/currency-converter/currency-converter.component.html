@@ -1,1 +1,28 @@
-<p>currency-converter works!</p>
+<div class="currency-list">
+  <label for="currency" class="currency-list__label">Choose currency:</label>
+  <select #currencyType id="currency" class="currency-list__select" [(ngModel)]="currentCurrency">
+    <option
+      class="currency-list__option"
+      *ngFor="let currency of availableCurrencies"
+      value="{{currency}}"
+    >{{currency}}
+    </option>
+  </select>
+</div>
+<section class="custom-cart">
+  <span>Custom cart (base price in dollars)</span>
+  <ul class="custom-cart__selected-products">
+    <li
+      class="custom-cart__selected-item-price"
+      *ngFor="let item of selectedCart">
+      {{'price: ' + item.price}}
+    </li>
+  </ul>
+  <div class="custom-cart__final-price" *ngIf="totalCartPrice">
+    <span>{{'Final price in ' + currentCurrency + ':'}}</span>
+    <span>{{totalCartPrice[currentCurrency]}}</span>
+  </div>
+</section>
+
+
+

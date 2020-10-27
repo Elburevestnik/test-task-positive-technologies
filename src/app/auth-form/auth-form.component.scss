@@ -66,6 +66,12 @@
     border: 2px solid rgb(110, 110, 110);
     border-radius: 5px;
 
+    &_invalid {
+      border: 2px solid #b70000;
+
+      transition: 200ms linear;
+    }
+
     &:focus {
       outline: none;
     }

@@ -1,0 +1,58 @@
+.currency-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__label {
+    margin-right: 10px;
+
+    color: white;
+    font-weight: bold;
+
+  }
+
+  &__select {
+    height: 30px;
+    width: 100px;
+
+    background: #d6d6d6;
+    border: none;
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__option {
+    background: #bdbdbd;
+
+    font-weight: bold;
+  }
+}
+
+
+.custom-cart {
+  height: auto;
+  width: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  color: #d6d6d6;
+
+  &__selected-products {
+    width: 150px;
+
+
+  }
+
+  &__finale-price {
+
+  }
+}
