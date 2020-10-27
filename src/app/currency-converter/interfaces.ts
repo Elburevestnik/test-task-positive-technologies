@@ -1,6 +1,17 @@
+export const currencyAcronym = {
+  USD: 'dollars',
+  EUR: 'euros',
+  RUB: 'rubles',
+  GBP: 'pounds',
+  JPY: 'yens'
+};
+
+export type currencyType = keyof ICurrencyPrice;
+
 export interface IProduct {
   price: number;
 }
+
 export interface ICurrencyPrice {
   rubles: number;
   euros: number;
@@ -8,8 +19,6 @@ export interface ICurrencyPrice {
   pounds: number;
   yens: number;
 }
-
-export type currencyType = keyof ICurrencyPrice;
 
 export interface IExchange {
   base: keyof typeof currencyAcronym;
@@ -19,10 +28,3 @@ export interface IExchange {
   };
 }
 
-export const currencyAcronym = {
-  USD: 'dollars',
-  EUR: 'euros',
-  RUB: 'rubles',
-  GBP: 'pounds',
-  JPY: 'yens'
-}

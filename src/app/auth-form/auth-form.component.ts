@@ -1,6 +1,5 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
 import {Router} from '@angular/router';
 import {MatSnackBar} from '@angular/material/snack-bar';
 
@@ -60,7 +59,7 @@ export class AuthFormComponent implements OnInit {
     }
   }
 
-  showSnackBar(action, message) {
+  showSnackBar(action: string, message: string) {
     this.snackBar.open(message, action, {
       duration: 2000,
       panelClass: 'auth-info-snackbar'

@@ -8,7 +8,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {Router, RouterModule} from '@angular/router';
 import {RoutingModule} from './routing.module';
 import {HttpClientModule} from '@angular/common/http';
 

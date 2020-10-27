@@ -12,7 +12,6 @@ import {currencyType, ICurrencyPrice, IProduct} from './interfaces';
 export class CurrencyConverterComponent implements OnInit {
   totalCartPrice: ICurrencyPrice = null;
   currentCurrency: currencyType = 'dollars';
-
   selectedCart: IProduct[] = SELECTED_CART;
 
   get sumPrice() {

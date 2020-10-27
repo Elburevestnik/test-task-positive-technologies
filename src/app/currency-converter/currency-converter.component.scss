@@ -1,14 +1,9 @@
 .currency-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   &__label {
     margin-right: 10px;
 
-    color: white;
+    color: #d6d6d6;
     font-weight: bold;
-
   }
 
   &__select {
@@ -17,7 +12,7 @@
 
     background: #d6d6d6;
     border: none;
-    border-radius: 10px;
+    border-radius: 7px;
 
     font-weight: bold;
 
@@ -40,19 +35,32 @@
   height: auto;
   width: 300px;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template: 50px 1fr/ 1fr 1fr;
+
+  margin-top: 20px;
+
+  border: 2px solid #d6d6d6;
+  border-radius: 10px;
+  box-shadow: 0 0 14px 1px rgba(0, 0, 0, 0.3);
 
   color: #d6d6d6;
 
+  &__title {
+    grid-area: 1/1/1/span 2;
+  }
   &__selected-products {
-    width: 150px;
-
-
+    grid-area: 2/1/2/1;
   }
 
-  &__finale-price {
+  &__final-price {
+    grid-area: 2/2/2/2;
 
+    flex-direction: column;
   }
+}
+.centered-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
